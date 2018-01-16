@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     trait_hash.each do |trait, names|
       pigeon_list.keys.each do |bird_name|
         if names.include?(bird_name)
-          pigeon_list[bird_name][category] << trait
+          pigeon_list[bird_name][category] << trait.to_s
         end
       end
   end
