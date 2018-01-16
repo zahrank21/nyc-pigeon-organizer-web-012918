@@ -17,6 +17,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[bird_name][category] << trait.to_s
         end
       end
+    end
   end
   pigeon_list
 end
